@@ -66,6 +66,11 @@
     .navbar-nav .nav-link {
         margin: 10px 0; /* Vertical spacing on smaller screens */
     }
+     .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        text-align: center;
+    }
 }
 .navbar-toggler{
     border: none;
