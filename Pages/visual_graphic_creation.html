@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Aizen</title>
+    <link rel="icon" href="../Content/title-logo.png" type="image/x-icon">
     <!-- Add Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="\style.css">
 </head>
 <body class="services-bg">
-    <!-- Navbar -->
+   <!-- Navbar -->
      
     <nav class="navbar navbar-expand-lg navbar-black bg-black sticky-top">
         <div class="container" >
             <!-- Logo on the left side -->
             <a class="navbar-brand" href="#">
-                <img src="/Content/Logo.png" alt="Logo" style="width: 120px;"> <!-- Replace 'your-logo.png' with your logo file -->
+                <img src="../Content/Logo.png" alt="Logo" style="width: 120px;"> <!-- Replace 'your-logo.png' with your logo file -->
             </a>
 
             <!-- Navbar toggle button for small screens -->
@@ -26,40 +27,39 @@
             <!-- Nav links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto"> <!-- 'mx-auto' centers the nav items -->
-                    <li class="nav-item ">
-                        <a class="nav-link " href="/index.html">Home</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pages/about_us.html">About Us</a>
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Pages/Services/visual_graphic_creation.html">Visual Graphics Creation</a>
-                          <a class="dropdown-item" href="/Pages/Services/Video_Prodection.html">Video Production</a>                         
-                          <a class="dropdown-item" href="/Pages/Services/web_development.html">Web development</a>
+                            <a class="dropdown-item" href="../Pages/visual_graphic_creation.html">Visual Graphics Creation</a>
+                            <a class="dropdown-item" href="../Pages/Video_Prodection.html">Video Production</a>                         
+                            <a class="dropdown-item" href="../Pages/web_development.html">Web development</a>
                         </div>
                       </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pages/projects.html">Our Projects</a>
+                        <a class="nav-link" href="projects.html">Our Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pages/contact_us.html">Contact Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-             <!-- Navbar End -->
+    </nav> <!-- Navbar End -->
 
              <div class="container">
                 <h1>Visual Graphic Creation & Thumbnail Making</h1>
         
                 <section class="article-section">
                     <h2>Visual Graphic Creation</h2>
-                    <img src="/Content/vgc1.jpg" alt="Visual Graphic Example">
+                    <img src="../Content/vgc1.jpg" alt="Visual Graphic Example">
                     <p>Visual graphic creation is the art and science of communicating ideas and information through visual
                         means. It encompasses a wide range of disciplines, including graphic design, illustration, photography,
                         and video production. Effective visual graphics are essential for businesses, organizations, and
@@ -85,7 +85,7 @@
         
                 <section class="article-section">
                     <h2>Thumbnail Making</h2>
-                    <img src="/Content/thumnail.jpg" alt="Thumbnail Example">
+                    <img src="../Content/thumnail.jpg" alt="Thumbnail Example">
                     <p>Thumbnails are small, clickable images that serve as previews for larger pieces of content, such as videos,
                         articles, or product listings. They are crucial for attracting attention and enticing users to click and
                         learn more.</p>
@@ -146,7 +146,7 @@
 
 
     <!-- Add Bootstrap JS and jQuery -->
-     <script src="script.js"></script>
+     <script src="../script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
