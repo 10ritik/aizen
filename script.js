@@ -76,32 +76,5 @@ window.addEventListener('resize', () => {
 
 //project end
 
-//lazy loading on slider
 
- document.addEventListener('DOMContentLoaded', function() { // Ensure DOM is loaded
-    const carouselItems = document.querySelectorAll('.carousel-item');
-
-    if ('IntersectionObserver' in window) {
-      const lazyImageObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const carouselItem = entry.target;
-            const bgImage = carouselItem.dataset.bg; // Get the actual image URL
-            carouselItem.style.backgroundImage = `url(${bgImage})`; // Set it as background
-            lazyImageObserver.unobserve(carouselItem); // Stop observing
-          }
-        });
-      });
-
-      carouselItems.forEach(carouselItem => {
-        lazyImageObserver.observe(carouselItem);
-      });
-    } else {
-      // Fallback for browsers that don't support Intersection Observer
-      carouselItems.forEach(carouselItem => {
-        const bgImage = carouselItem.dataset.bg;
-        carouselItem.style.backgroundImage = `url(${bgImage})`;
-      });
-    }
-  });
 
